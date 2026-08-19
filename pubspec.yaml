@@ -1,5 +1,5 @@
 name: app_paulo_luna
-description: "App Paulo Luna - Gestão de Jornada"
+description: "App Paulo Luna Web"
 publish_to: 'none'
 version: 1.0.0+1
 
@@ -9,9 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_overlay_window: ^0.4.5
   shared_preferences: ^2.2.3
-  app_to_foreground: ^0.0.3
 
 dev_dependencies:
   flutter_test:
