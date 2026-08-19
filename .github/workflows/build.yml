@@ -24,17 +24,15 @@ jobs:
           flutter-version: '3.22.3'
           channel: 'stable'
 
-      - name: Gerar estrutura nativa Android sem conflitos
+      - name: Gerar estrutura nativa Android
         run: |
-          flutter config --no-analytics
-          cp pubspec.yaml pubspec.yaml.bak
           rm -rf android
-          flutter create . --platforms=android --org com.example --project-name app_paulo_luna
-          cp pubspec.yaml.bak pubspec.yaml
+          flutter create . --platforms=android --org com.pauloluna --project-name app_paulo_luna
 
       - name: Configurar Permissoes de Sobreposicao
         run: |
           sed -i '/<application/i \    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>\n    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>' android/app/src/main/AndroidManifest.xml
+          sed -i 's/android:label=".*"/android:label="Paulo Luna"/' android/app/src/main/AndroidManifest.xml
 
       - name: Instalar dependencias
         run: flutter pub get
