@@ -11,7 +11,7 @@ dependencies:
     sdk: flutter
   flutter_overlay_window: ^0.4.5
   shared_preferences: ^2.2.3
-  app_to_foreground: ^0.0.4
+  app_to_foreground: ^0.0.3
 
 dev_dependencies:
   flutter_test:
