@@ -1,0 +1,22 @@
+name: app_paulo_luna
+description: "App Paulo Luna - Gestão de Jornada"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_overlay_window: ^0.4.5
+  shared_preferences: ^2.2.3
+  app_to_foreground: ^0.0.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
